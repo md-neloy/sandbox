@@ -1,0 +1,19 @@
+#header {
+  background: #3f78e0;
+  padding: 10px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-family: "Space Grotesk", sans-serif;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+    .text2 {
+      display: flex;
+      gap: 25px;
+    }
+  }
+}

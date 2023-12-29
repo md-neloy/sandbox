@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Vidaloka&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+#header {
+  background: #3f78e0;
+  padding: 10px 0;
+}
+#header .container {
+  display: flex;
+  justify-content: space-between;
+}
+#header .container p {
+  font-family: "Space Grotesk", sans-serif;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+#header .container .text2 {
+  display: flex;
+  gap: 25px;
+}
+
+#nav .main_menu .container ul li a {
+  position: relative;
+  font-family: "Space Grotesk", sans-serif;
+  color: #343f52;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.4s;
+}
+#nav .main_menu .container ul li a:hover {
+  color: #3f78e0;
+}
+#nav .main_menu .container ul li a:hover span {
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+}
+@keyframes spanning {
+  100% {
+    rotate: 360deg;
+  }
+}
+#nav .main_menu .container ul li a span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  background-color: #3f78e0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  animation: spanning linear infinite;
+  animation-duration: 0.4s;
+}
+#nav .main_menu .container .btn {
+  color: #343f52;
+  background: transparent;
+  border-color: #3f78e0;
+}
+#nav .main_menu .container .btn:hover {
+  background: #3f78e0 !important;
+  color: #ffffff;
+}
+
+#banner {
+  position: relative;
+}
+#banner .banner_img img {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#banner .banner_img ul {
+  position: absolute;
+  display: flex;
+  gap: 5px;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#banner .banner_img ul li {
+  font-size: 0;
+}
+#banner .banner_img ul li button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+}
+#banner .banner_img ul .slick-active button {
+  background: #3f78e0;
+}
+#banner .container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+#banner .container h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(to right, #3f78e0, #ffffff, orange, yellow, green, #3f78e0);
+  color: transparent;
+}
+#banner .container h1:nth-child(2) {
+  margin-left: 379px;
+}
+#banner .container img:nth-child(3) {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+#banner .container img:nth-child(4) {
+  position: absolute;
+  top: 25%;
+  left: 49%;
+}
+#banner .container img:nth-child(5) {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+}
+#banner .container p {
+  width: 701px;
+  margin: 38px auto;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+#banner .container .project {
+  text-align: center;
+}
+#banner .container .project a {
+  position: relative;
+  border: 2px solid #3f78e0;
+  padding: 22px 30px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 8px;
+  transform: translateX(-50%);
+}
+#banner .container .project a:hover > span {
+  animation: project_span linear infinite;
+  animation-duration: 0.5s;
+}
+#banner .container .project a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3f78e0;
+  z-index: -1;
+}
+@keyframes project_span {
+  100% {
+    rotate: 360deg;
+  }
+}/*# sourceMappingURL=style.css.map */
